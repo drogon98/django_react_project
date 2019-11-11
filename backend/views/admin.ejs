@@ -1,0 +1,21 @@
+<% include partials/header %>
+<% include partials/menu %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <h3>Add movie.</h3>
+            <form action="/create" method="POST" enctype="multipart/form-data">
+                <label>Title</label>
+                <input type="text" name="title" class="form-control">
+                <label>Description</label>
+                <input type="text" name="description" class="form-control">
+                <label>Episodes</label>
+                <input type="number" name="episode" class="form-control">
+                <label>Image</label>
+                <input type="file" name="image" class="form-control">
+                <button type="submit" class="btn btn-md add-btn my-3">Add</button>
+            </form>
+        </div>
+    </div>
+</div>
+<% include partials/footer %>
